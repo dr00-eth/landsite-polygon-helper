@@ -11,11 +11,12 @@ function App() {
   return (
     <div className="App">
       <h1>Land Site Overlay Tool</h1>
+      <p><small>Upload Map, Double-Click to Add Rectangle, Select to Transform, Double Select to Edit Unit Num, Copy/Paste Auto-Increments Unit Num</small></p>
       <ImageUpload setImage={setImage} />
       {image && (
-        <Canvas 
-          image={image} 
-          rectangles={rectangles} 
+        <Canvas
+          image={image}
+          rectangles={rectangles}
           setRectangles={setRectangles}
         />
       )}
